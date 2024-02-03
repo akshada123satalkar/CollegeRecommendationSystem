@@ -1,0 +1,317 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap");
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+:root {
+    --c-theme: rgb(86, 209, 245);
+    --c-th-100: rgb(86, 209, 245);
+    --t-a-900: rgb(30, 30, 30);
+    --b-bg: rgb(52, 102, 116);
+    --w-txt: #fff;
+    --t-hd: rgb(30, 30, 30);
+    --text-gr: linear-gradient(to right, rgb(86, 209, 245), rgb(69, 156, 181), rgb(52, 102, 116), rgb(30, 30, 30));
+    --main-gr: linear-gradient(to right, rgb(30, 30, 30), rgb(52, 102, 116), rgb(69, 156, 181), rgb(86, 209, 245));
+    --bs-sm: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.05);
+    --bs-md: 0 1px 3px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.06), 0 3px 8px rgba(0, 0, 0, 0.09);
+    --bs-lg: 0 1px 4px rgba(0, 0, 0, 0.09), 0 3px 8px rgba(0, 0, 0, 0.09), 0 4px 13px rgba(0, 0, 0, 0.13);
+} */
+.html {
+    height: 100%;
+}
+
+.gradient-background {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, rgb(30, 30, 30), rgb(52, 102, 116), rgb(69, 156, 181), rgb(86, 209, 245));
+    height: 90vh;
+}
+
+.FORM-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.FORM-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    margin-top: 2px;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+option{
+    color: black;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 0;
+}
+
+.user-box .select label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+
+.user-box input:focus {
+    border-bottom-color: #03e9f4;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 13px;
+}
+
+.FORM-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-right: 40px;
+    letter-spacing: 4px;
+}
+
+.FORM-box a:hover {
+    /* background: #03e9f4; */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+    cursor: pointer;
+}
+
+.FORM-box a span {
+    position: absolute;
+    display: block;
+}
+
+.FORM-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: anim1 1s linear infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.FORM-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.FORM-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.FORM-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: anim34 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes anim34 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.card {
+    margin-top: 5px;
+    border: 3px  solid rgba(32,72,83,255);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 123, 255, 0.2), 0 6px 20px 0 rgba(0, 123, 255, 0.19); */
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    height: 520px;
+    border-radius: 10px;
+    
+}
+
+.card-header{
+    background-color: rgba(32,72,83,255);
+}
+
+.card-header h5 a{
+
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.card-header a{
+    font-size: 15px;
+    text-transform: capitalize;
+    
+}
+
+.card-text a {
+    color: rgba(32,72,83,255);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: solid;
+}
+.card-text{
+    font-size: 15px;
+}
+.card img{
+    height: 210px;
+    width: 338px;
+    margin: auto;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .card img {
+      height: 210px;
+      width: 100%;
+    }
+}
+.card-footer{
+    background-color: rgba(32,72,83,255);
+    border-radius: 10px;
+    margin-bottom: 0px;
+    background-position: 0%;
+    
+}
+.card-footer a{
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 0;
+    width: auto;
+    position: center;
+    letter-spacing:4px ;
+    border:#03e9f4;
+}
+
+.card-footer a:hover {
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(32,72,83,255), 0 0 25px rgba(32,72,83,255), 0 0 50px rgba(32,72,83,255),
+        0 0 100px rgba(32,72,83,255);
+    cursor: pointer;
+    text-decoration: none;
+}
+.gradient-background1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, rgb(30, 30, 30), rgb(52, 102, 116), rgb(69, 156, 181), rgb(86, 209, 245));
+}

@@ -1,0 +1,169 @@
+
+.sng-footer {
+    background-color: #333;
+    padding-top: 40px;
+    opacity: 1;
+    background-attachment: fixed;
+    background-repeat: inherit;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    display:inline-block;
+}
+
+.sng-footer .footer-title {
+    color: rgb(86, 209, 245);
+    padding-bottom: 30px;
+    font-size: 1em;
+    text-align: left;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 650;
+}
+
+.sng-footer p {
+    font-size: 1.7em;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.sng-footer .click-more a {
+    color: #fff;
+    font-size: 13px;
+    line-height: normal;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sng-footer ul {
+    margin: 3px;
+    padding: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* color: #fff; */
+}
+
+.sng-footer li {
+    width: 100%;
+    position: relative;
+}
+
+.sng-footer li a {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 3px;
+}
+
+.sng-footer ul li:hover a {
+    color: #fff;
+}
+
+.sng-footer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sng-footer form input {
+    height: 33px;
+    border: 0px;
+    padding: 5px 10px 5px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+    border-radius: 0px 10px 10px 0px;
+    color: #ffff;
+    border: none;
+}
+
+.sng-footer form .submit-button {
+    position: relative;
+    left: -10px;
+}
+
+.sng-footer form .submit-button .button {
+    background: var(--c-theme);
+    color: Var(--w-txt);
+}
+
+.sng-footer form .submit-button .button:before,
+.sng-footer form .submit-button .button:after {
+    background: var(--c-th-100);
+}
+
+.sng-footer form .submit-button .button:hover {
+    background: var(--c-theme);
+    color: Var(--w-txt);
+}
+
+.sng-footer .com-info ul li:before {
+    display: none;
+}
+
+.sng-footer {
+    text-align: left;
+}
+
+.sng-footer .footer-title {
+    font-size: 18px;
+    text-align: left;
+}
+
+.sng-footer p {
+    text-align: left;
+}
+/* 
+.sng-footer .click-more {
+    text-align: left;
+    margin-bottom: 20px;
+} */
+
+.sng-footer {
+    text-align: left;
+}
+
+.sng-footer ul {
+    margin-bottom: 30px;
+    text-align: left;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+}
+
+.sng-footer ul li {
+    width: auto;
+    display: contents;
+}
+
+.sng-footer ul li a {
+    font-size: 17px;
+    margin: 1 6px;
+}
+
+.sng-footer form {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+}
+
+
+.emaillist .es_caption {
+    display: none;
+}
+
+.es_subscription_form_submit {
+    background: rgb(52, 102, 116) !important;
+    position: relative;
+    left: -11px;
+}
+.sng-footer ul li hr{
+    color: #fff;
+}

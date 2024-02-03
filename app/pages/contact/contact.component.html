@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div class="topContainer">
+            <div class="main">
+                <input type="checkbox" name="" id="chk" aria-hidden="true">
+                <div class="signup">
+                    <form [formGroup]="signupUsers" (ngSubmit)="onSignUp()">
+                        <label for="chk" aria-hidden="true">SignUp</label>
+                        <input type="text" name="txt" placeholder="username" formControlName="userName" required="username">
+                        <input type="email" name="email" placeholder="email" formControlName="email" required="email">
+                        <input type="password" name="pswd" placeholder="password" formControlName="password"required="password">
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <div class="login">
+                    <form [formGroup]="loginUsers" (ngSubmit)="onLogin()">
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="text" name="userName" placeholder="username" formControlName="userName">
+                        
+                        <input type="password" name="pswd" placeholder="password" formControlName="password">
+                        <button>Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div class="topContainer">
+            <div class="main">
+                <input type="checkbox" name="" id="chk" aria-hidden="true">
+                <div class="signup">
+                    <form [formGroup]="signupUsers" (ngSubmit)="onSignUp()">
+                        <label for="chk" aria-hidden="true">SignUp</label>
+                        <input type="text" name="txt" placeholder="username" formControlName="userName" required="username">
+                        <input type="email" name="email" placeholder="email" formControlName="email" required="email">
+                        <input type="password" name="pswd" placeholder="password" formControlName="password"required="password">
+                        <button [disabled]="!signupUsers.valid">Sign Up</button>
+                    </form>
+                </div>
+                <div class="login">
+                    <form [formGroup]="loginUsers" (ngSubmit)="onLogin()">
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="text" name="userName" placeholder="username" formControlName="userName">
+                        
+                        <input type="password" name="pswd" placeholder="password" formControlName="password">
+                        <button>Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<div *ngIf="!isLoggedIn">
+    <h2>Register</h2>
+    <form (ngSubmit)="onRegisterSubmit()">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email"  [(ngModel)]="registerEmail" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password"  [(ngModel)]="registerPassword" name="password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email"  [(ngModel)]="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" [(ngModel)]="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div *ngIf="isLoggedIn">
+    <p>You are logged in!</p>
+    <button (click)="onLogout()">Logout</button>
+</div>-->

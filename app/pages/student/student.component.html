@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div class="gradient-background" [hidden] = mySearch>
+        <div class="FORM-box" >
+            <h2> Enter Details to Search College</h2>
+            <form >
+                <div class="user-box">
+                    <!-- <input type="text" [(ngModel)]="Region" [ngModelOptions]="{standalone: true}">  -->
+                    <label for="" style="color: #03e9f4;font-size: 13px;">Select Region</label>
+                    <br>
+
+                    <select name="Region" [(ngModel)]="Region">
+                        <option></option>
+                        <option *ngFor="let region of RegionList" style="color: black;">{{region}}</option>
+                    </select>
+                </div>
+                <div class="user-box">
+                    <input type="number" [(ngModel)]="minMerit" [ngModelOptions]="{standalone: true}">
+                    <label for="">Enter Minimum Merit Score</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" [(ngModel)]="maxMerit" [ngModelOptions]="{standalone: true}" style="margin-bottom:10px;">
+                    <label for="">Enter Maximum Merit Score</label>
+                </div>
+                <div class="user-box" >
+                    <!-- <input type="text" [(ngModel)]="branch" [ngModelOptions]="{standalone: true}"> -->
+                    
+                    <br>
+                    <select name="branch" [(ngModel)]="branch">
+                        <option></option>                        
+                        <option *ngFor="let item of BranchList" style="color: black;">{{item}}</option> 
+                    </select>
+                    <label for="" style="color: #03e9f4;font-size: 13px; margin-top: 2px;">Select Branch</label>
+                </div>
+
+                <a id="results" (click)="clickMe({'Region':Region,'minMerit':minMerit,'maxMerit':maxMerit,'branch':branch})">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </a>
+            </form>
+        </div>
+
+    </div>
+    <div class="row container-fluid gradient-background1"  >
+        <div class="col-md-3 " *ngFor="let item of data" style="margin-top: 10px;">
+            <div class="card">
+                <!-- <img class="card-img-top" [src]=getRandomImageUrl() alt="Institute image" /> -->
+                <img class="card-img-top container-fluid" [src]=[item.Image]>
+                <div class="card-header">
+                    <h5 class="card-title"><a href="{{item.Link}}">{{item['Institute Name']}}</a></h5>
+                    <a class="card-title ">{{item.Region}}</a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"><a>Institute Code:</a> {{item['Institute Code']}}</p>
+                    <!--<p class="card-text">Institute Name: {{item['Institute Name']}}</p>-->
+                    <p class="card-text"><a>Branch:</a> {{branch}}</p>
+
+                    <p class="card-text"><a>Cutoff:</a> {{item.branch}}</p>
+                </div>
+                <div class="card-footer ">
+                    <a class="card-footer" href="{{item.Link}}" target="_blank">Learn More</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+<router-outlet></router-outlet>
